@@ -1,10 +1,13 @@
 const express = require('express');
 const fs = require('fs');
+const cors = require('cors');
 
 const location = process.env.LOCATION || 'localhost';
 const port = process.env.PORT || 5000;
 
 const app = express();
+
+app.use(cors());
 
 app.get('/', (req, res) => {
     return res.send('<h1>Hello from ' + location + '</h1>')
