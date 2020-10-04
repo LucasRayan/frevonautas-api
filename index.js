@@ -157,5 +157,50 @@ app.get('/expedicoes/tempo', (req, res) => {
 });
 console.log(`"https://frevonautas.mybluemix.net/expedicoes/tempo"`);
 
+app.get('/games/player', (req, res) => {
+    fs.readFile('./assets/images/player.png', function(err, data) {
+        res.writeHead(200, {'Content-Type': 'image/png'});
+        res.write(data);
+        return res.end();
+    })
+});
+console.log(`"https://frevonautas.mybluemix.net/games/player"`);
+
+app.get('/games/ranking', (req, res) => {
+    fs.readFile('./assets/images/ranking.png', function(err, data) {
+        res.writeHead(200, {'Content-Type': 'image/png'});
+        res.write(data);
+        return res.end();
+    })
+});
+console.log(`"https://frevonautas.mybluemix.net/games/ranking"`);
+
+app.get('/games/game-1', (req, res) => {
+    fs.readFile('./assets/images/mito_ou_verdade.png', function(err, data) {
+        res.writeHead(200, {'Content-Type': 'image/png'});
+        res.write(data);
+        return res.end();
+    })
+});
+console.log(`"https://frevonautas.mybluemix.net/games/game-1"`);
+
+app.get('/games/game-2', (req, res) => {
+    fs.readFile('./assets/images/quiz_em_dupla.png', function(err, data) {
+        res.writeHead(200, {'Content-Type': 'image/png'});
+        res.write(data);
+        return res.end();
+    })
+});
+console.log(`"https://frevonautas.mybluemix.net/games/game-2"`);
+
+app.get('/games/game-3', (req, res) => {
+    fs.readFile('./assets/images/quiz_em_grupo.png', function(err, data) {
+        res.writeHead(200, {'Content-Type': 'image/png'});
+        res.write(data);
+        return res.end();
+    })
+});
+console.log(`"https://frevonautas.mybluemix.net/games/game-3"`);
+
 app.listen(port, () => console.log('Executando na porta', port));
 console.log(`Executando em http://${location}:${port}`);
