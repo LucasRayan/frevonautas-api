@@ -1,0 +1,11 @@
+applications:
+  - name: frevonautas-server
+    path: .
+    command: node index.js
+    instance: 1
+    routes:
+      - route: frevonautas.mybluemix.net
+    random-route: true
+    memory: 128M
+    env:
+      LOCATION: 'IBM Cloud'

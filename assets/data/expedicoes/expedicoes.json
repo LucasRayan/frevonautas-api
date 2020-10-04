@@ -1,0 +1,41 @@
+{
+    "expedicoes": [
+        
+        {
+            "name": "Terra",
+            "description" : "Explorando a Terra",
+            "image": "https://frevonautas.mybluemix.net/images/terra",
+            "points": 150
+        },
+
+        {
+            "name": "Atmosfera",
+            "description" : "Analisando a atmosfera da Terra",
+            "image": "https://frevonautas.mybluemix.net/expedicoes/atmosfera",
+            "points": 150
+        },
+
+        {
+            "name": "Tecnologias",
+            "description" : "A NASA e inovações cotidianas",
+            "image": "https://frevonautas.mybluemix.net/expedicoes/tecnologias",
+            "points": 150
+        },
+
+        {
+            "name": "Movimentos",
+            "description" : "Um grande pião no espaço",
+            "image": "https://frevonautas.mybluemix.net/expedicoes/movimentos",
+            "points": 150
+        },
+
+        {
+            "name": "Tempo",
+            "description" : "Dias, meses e anos",
+            "image": "https://frevonautas.mybluemix.net/expedicoes/tempo",
+            "points": 150
+        }
+       
+    ]
+
+}
