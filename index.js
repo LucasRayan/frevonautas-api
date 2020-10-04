@@ -202,5 +202,23 @@ app.get('/games/game-3', (req, res) => {
 });
 console.log(`"https://frevonautas.mybluemix.net/games/game-3"`);
 
+app.get('/games/verdade', (req, res) => {
+    fs.readFile('./assets/images/verdade.png', function(err, data) {
+        res.writeHead(200, {'Content-Type': 'image/png'});
+        res.write(data);
+        return res.end();
+    })
+});
+console.log(`"https://frevonautas.mybluemix.net/games/verdade"`);
+
+app.get('/games/mito', (req, res) => {
+    fs.readFile('./assets/images/mito.png', function(err, data) {
+        res.writeHead(200, {'Content-Type': 'image/png'});
+        res.write(data);
+        return res.end();
+    })
+});
+console.log(`"https://frevonautas.mybluemix.net/games/mito"`);
+
 app.listen(port, () => console.log('Executando na porta', port));
 console.log(`Executando em http://${location}:${port}`);
